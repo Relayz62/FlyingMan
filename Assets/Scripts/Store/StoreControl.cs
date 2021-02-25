@@ -1,18 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StoreControl : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject TapToStart; // убираем тэп ту старт
+    public Canvas StoreCanvas; // магазин
+    [SerializeField] private Camera _storeCam; // камера в магазине
+    [SerializeField] private GameObject _stand;
+    private bool isStoreOpen;
+
+
+
+    private void FixedUpdate()
     {
-        
+        if(isStoreOpen) RotateStand();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void RotateStand()
     {
-        
+        _stand.transform.Rotate(new Vector3(0, 30, 0) * Time.fixedDeltaTime);
+    }
+
+    public void OpenStore()
+    {
+        _storeCam.enabled = true;
+        TapToStart.SetActive(false);
+        isStoreOpen = true;
+        StoreCanvas.enabled = true;
+    }
+
+    public void CloseStore()
+    {
+        _storeCam.enabled = false;
+        TapToStart.SetActive(true);
+        isStoreOpen = false;
+        StoreCanvas.enabled = false;
     }
 }

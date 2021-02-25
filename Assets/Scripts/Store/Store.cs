@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class Store : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public List<StoreEntity> storeEntity = new List<StoreEntity>();
+	public delegate void OnStoreChanged();
+	public OnStoreChanged onStoreChangedCallback;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	#region Singleton
+	public static Store instance;
+
+	void Awake()
+	{
+		if (instance != null)
+		{
+			Debug.LogWarning("Магазин не найден!");
+			return;
+		}
+		instance = this;
+	}
+	#endregion
 }

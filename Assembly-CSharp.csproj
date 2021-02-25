@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Player\TriggerEnter.cs" />
     <Compile Include="Assets\Scripts\Store\Store.cs" />
     <Compile Include="Assets\Scripts\Store\StoreControl.cs" />
+    <Compile Include="Assets\Scripts\Store\StoreEntity.cs" />
     <Compile Include="Assets\Scripts\Store\StoreSlots.cs" />
     <Compile Include="Assets\Scripts\TestScript.cs" />
     <Compile Include="Assets\Scripts\UI\UIController.cs" />
