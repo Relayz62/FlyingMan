@@ -11,4 +11,5 @@ public class StoreEntity : ScriptableObject
     public int save = 0;
     public GameObject Model;
     public enum Accses { Locked, Opened }
+    public Accses accsesType; 
 }

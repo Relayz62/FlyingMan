@@ -12,7 +12,6 @@ public class StoreControl : MonoBehaviour
     private bool isStoreOpen;
 
 
-
     private void FixedUpdate()
     {
         if(isStoreOpen) RotateStand();

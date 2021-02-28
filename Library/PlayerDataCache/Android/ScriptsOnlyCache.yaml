@@ -1,10 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - DeadZone
     - GameStates
-    - Money
     - PlayerAnimation
     - PlayerTouchControl
+    - ReloadZone
+    - Score
+    - Store
+    - StoreControl
+    - StoreEntity
+    - StoreEvents
+    - StoreSlots
     - TapToStart
     - TestScript
     - TriggerEnter
@@ -83,55 +90,69 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11348}
+      Script: {instanceID: 11322}
     - Class: 114
       Script: {instanceID: 11350}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11374}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11426}
+      Script: {instanceID: 11376}
     - Class: 114
-      Script: {instanceID: 11454}
+      Script: {instanceID: 11428}
     - Class: 114
-      Script: {instanceID: 11470}
+      Script: {instanceID: 11434}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 11592}
+      Script: {instanceID: 11474}
     - Class: 114
-      Script: {instanceID: 11736}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 11738}
+      Script: {instanceID: 11596}
     - Class: 114
-      Script: {instanceID: 11768}
+      Script: {instanceID: 11740}
     - Class: 114
-      Script: {instanceID: 11806}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 12072}
+      Script: {instanceID: 11772}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 11810}
     - Class: 114
-      Script: {instanceID: 12218}
+      Script: {instanceID: 12076}
     - Class: 114
-      Script: {instanceID: 12366}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 12590}
+      Script: {instanceID: 12224}
     - Class: 114
-      Script: {instanceID: 13186}
+      Script: {instanceID: 12372}
     - Class: 114
-      Script: {instanceID: 13488}
+      Script: {instanceID: 12458}
     - Class: 114
-      Script: {instanceID: 13528}
+      Script: {instanceID: 12834}
     - Class: 114
-      Script: {instanceID: 13626}
+      Script: {instanceID: 13198}
     - Class: 114
-      Script: {instanceID: 20816}
+      Script: {instanceID: 13268}
     - Class: 114
-      Script: {instanceID: 27720}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 27910}
+      Script: {instanceID: 13480}
+    - Class: 114
+      Script: {instanceID: 13506}
+    - Class: 114
+      Script: {instanceID: 13546}
+    - Class: 114
+      Script: {instanceID: 13644}
+    - Class: 114
+      Script: {instanceID: 17688}
+    - Class: 114
+      Script: {instanceID: 70908}
+    - Class: 114
+      Script: {instanceID: 77512}
+    - Class: 114
+      Script: {instanceID: 96500}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -155,6 +176,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: a1f19ad47d3094e235f21b74dfc423a8
@@ -205,10 +232,16 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: a2321d933e0867bf9030429e11284028
+      Hash: 7534933f8ea43b315b0c492e6de9af76
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIController
+  - hash:
+      serializedVersion: 2
+      Hash: c40cd03d3b444bafe3bf40276569647d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StoreSlots
   - hash:
       serializedVersion: 2
       Hash: 27351bea228a99d3ffa14f29ae50f3d4
@@ -469,7 +502,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 0fda06e4ba243492103594368c2cf2bf
+      Hash: 990ef929a22871ab64a45d49f467611b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MapGeneration
@@ -499,7 +532,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: bd7aeecb1e7a3e1172d50e268d7186ce
+      Hash: db6d29bca8cb747abc37a33a805dfb3d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MapObjects
@@ -515,6 +548,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: eea077ed13f32b93ef2562bd833eebd0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Store
   - hash:
       serializedVersion: 2
       Hash: a53651ee3996fbba20dfe0fce02f0b23
@@ -541,12 +580,6 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -569,6 +602,12 @@ ScriptsOnlyBuild:
     assemblyName: Boxophobic.Utils.Editor.dll
     namespaceName: Boxophobic.StyledGUI
     className: StyledScriptableObjectEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeadZone
   - hash:
       serializedVersion: 2
       Hash: c9a8b80298a116835b51ba1cf9284367
@@ -625,6 +664,18 @@ ScriptsOnlyBuild:
     className: iOSNotificationsWrapper
   - hash:
       serializedVersion: 2
+      Hash: 6e6403e13ca0b2aa6473c2be95f0c246
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Money
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerStats
+  - hash:
+      serializedVersion: 2
       Hash: 6939772cb3ce775a8e8d99f332534491
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -649,6 +700,18 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TriggerEnter
+  - hash:
+      serializedVersion: 2
+      Hash: 958a8f1a776d5fc5d4153c916159fb4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StoreControl
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -659,6 +722,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 6e8ff17f1c67b91870bffd0c18fd550a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StoreEntity
   - hash:
       serializedVersion: 2
       Hash: d5630f96bd5a6a6eed7e1754c3fb8703
@@ -781,22 +850,22 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 3a1070f50229d4f80ba5e89893b2e0a3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerStats
-  - hash:
-      serializedVersion: 2
-      Hash: 6e6403e13ca0b2aa6473c2be95f0c246
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Money
+    className: StoreEvents
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: TriggerEnter
+    className: ReloadZone
+  - hash:
+      serializedVersion: 2
+      Hash: 0a40bb7fdf48a59629e49df5d400c929
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Score
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

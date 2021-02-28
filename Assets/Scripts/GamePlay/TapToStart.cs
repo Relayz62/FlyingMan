@@ -20,7 +20,7 @@ public class TapToStart : MonoBehaviour, IPointerClickHandler
     }
     private IEnumerator JumpingOnStart()
     {
-        _uIController.ClearText();
+        _uIController.HideUI();
         _playerAnim.SetAnimationBool("Jump", true);
         yield return new WaitForSecondsRealtime(1f);
         _gameStates.StartGame(true);

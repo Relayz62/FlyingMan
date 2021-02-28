@@ -67,6 +67,8 @@
     <Compile Include="Assets\Scripts\GamePlay\GameStates.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Money.cs" />
     <Compile Include="Assets\Scripts\GamePlay\PlayerTouchControl.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\ReloadZone.cs" />
+    <Compile Include="Assets\Scripts\GamePlay\Score.cs" />
     <Compile Include="Assets\Scripts\GamePlay\TapToStart.cs" />
     <Compile Include="Assets\Scripts\Maps\MapGeneration.cs" />
     <Compile Include="Assets\Scripts\Maps\MapObjects.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Assets\Scripts\Store\Store.cs" />
     <Compile Include="Assets\Scripts\Store\StoreControl.cs" />
     <Compile Include="Assets\Scripts\Store\StoreEntity.cs" />
+    <Compile Include="Assets\Scripts\Store\StoreEvents.cs" />
     <Compile Include="Assets\Scripts\Store\StoreSlots.cs" />
     <Compile Include="Assets\Scripts\TestScript.cs" />
     <Compile Include="Assets\Scripts\UI\UIController.cs" />

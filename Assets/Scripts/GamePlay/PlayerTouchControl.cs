@@ -48,9 +48,9 @@ public class PlayerTouchControl : MonoBehaviour
         if (isDirectionChoose && _direction.magnitude > 2)
         {
             _player.transform.position = new Vector3(               
-                _direction.x * _speedForce * Time.fixedDeltaTime,
+               - _direction.x * _speedForce * Time.fixedDeltaTime,
                 _player.transform.position.y,
-                _direction.y * _speedForce * Time.fixedDeltaTime);
+               - _direction.y * _speedForce * Time.fixedDeltaTime);
             
         }
         ///////////////////Borders//////////////////////////////////
