@@ -14,6 +14,7 @@ public class StoreSlots : MonoBehaviour, IPointerClickHandler
     public GameObject slotModel;
     public int slotID;
     [SerializeField] private PlayerClothes _playerClothes;
+    [SerializeField] private PlayerClothes _playerClotherForStore;
 
 
     public void AddItem(StoreEntity newStoreEntity)
@@ -33,5 +34,6 @@ public class StoreSlots : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         _playerClothes.WearClothes(this);
+        _playerClotherForStore.WearClothes(this);
     }
 }

@@ -138,6 +138,8 @@ MonoBehaviour:
   slotID: 0
   _playerClothes: {fileID: 5515444311691348092, guid: a52502991e77d3e498b8e8fc9b464adf,
     type: 3}
+  _playerClotherForStore: {fileID: 1451404387375699233, guid: 84647f0db28c36a49ab988d50654f8f8,
+    type: 3}
 --- !u!1 &6360063005162702468
 GameObject:
   m_ObjectHideFlags: 0
