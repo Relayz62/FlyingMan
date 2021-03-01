@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerPrefsSafe.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\Player\TriggerEnter.cs" />
+    <Compile Include="Assets\Scripts\Powers.cs" />
     <Compile Include="Assets\Scripts\Store\Store.cs" />
     <Compile Include="Assets\Scripts\Store\StoreControl.cs" />
     <Compile Include="Assets\Scripts\Store\StoreEntity.cs" />

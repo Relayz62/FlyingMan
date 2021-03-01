@@ -33,5 +33,14 @@ public class GameStates : MonoBehaviour
 
     }
 
+    public void PauseGame(bool pause)
+    {
+        if(pause)
+        {
+            gameState = GameState.Pause;
+            _playerContrl.enabled = false;
+        }
+    }
+
 }
 

@@ -2,6 +2,8 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - GameStates
+    - MapGeneration
+    - MapObjects
     - Money
     - MoneyPicked
     - PlayerAnimation
@@ -9,6 +11,7 @@ ScriptsOnlyBuild:
     - PlayerDeath
     - PlayerStats
     - PlayerTouchControl
+    - Powers
     - ReloadZone
     - Score
     - Store
@@ -22,6 +25,8 @@ ScriptsOnlyBuild:
     - UIController
     Boxophobic.Utils.Scripts.dll:
     - Boxophobic.Utils.SettingsData
+    Unity.Mobile.AndroidLogcat.Editor.dll:
+    - Unity.Android.Logcat.AndroidLogcatManager
     Unity.Postprocessing.Runtime.dll:
     - UnityEngine.Rendering.PostProcessing.AmbientOcclusion
     - UnityEngine.Rendering.PostProcessing.Bloom
@@ -64,8 +69,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -197,6 +204,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13024}
     - Class: 114
+      Script: {instanceID: 13114}
+    - Class: 114
       Script: {instanceID: 13154}
     - Class: 114
       Script: {instanceID: 13268}
@@ -210,6 +219,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13464}
     - Class: 114
       Script: {instanceID: 13474}
+    - Class: 114
+      Script: {instanceID: 13494}
     - Class: 114
       Script: {instanceID: 13502}
     - Class: 114
@@ -276,6 +287,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15728}
     - Class: 114
       Script: {instanceID: 83892}
+    - Class: 114
+      Script: {instanceID: 120708}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -363,7 +376,7 @@ ScriptsOnlyBuild:
     className: MoneyPicked
   - hash:
       serializedVersion: 2
-      Hash: f2e946b273de16f135188f3c535920a8
+      Hash: b6d87e909ef4ad853716f976271921d2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerTouchControl
@@ -405,7 +418,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 576beddb1d74f7df565570215421d1e2
+      Hash: 1da57f44d19dced3467d32669947caf2
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UIController
@@ -699,7 +712,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerToggle
   - hash:
       serializedVersion: 2
-      Hash: 0fda06e4ba243492103594368c2cf2bf
+      Hash: bdb9f21235cf676c9023ad62ef4a7eca
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MapGeneration
@@ -753,7 +766,7 @@ ScriptsOnlyBuild:
     className: PlayerDeath
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 14e611eba86cbcd44fef326bdaaca68a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ReloadZone
@@ -1207,7 +1220,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 9a19aaa09469f3c8cadbddb1bff42eed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Powers
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/User/Desktop/zopa.apk
+  playerPath: C:/Users/User/Desktop/FlyingManVersion1.apk

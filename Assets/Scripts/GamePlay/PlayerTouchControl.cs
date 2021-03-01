@@ -6,9 +6,9 @@ public class PlayerTouchControl : MonoBehaviour
 {
     [SerializeField] private Transform _player; // Трансформ игрока
     [Range(0,100)]
-    [SerializeField] private float _speedForce; // скорость перемещения
+    public float speedForce; // скорость перемещения
     [Range(0, 100)]
-    [SerializeField] private float _fallForce; // скорость падения
+    public float fallForce; // скорость падения
     private Vector2 _direction; // направление для перемещения
     private Vector2 _startPos; // стартовая точка касания тача
     private bool isDirectionChoose; // проверка идёт ли перемещение
@@ -48,9 +48,9 @@ public class PlayerTouchControl : MonoBehaviour
         if (isDirectionChoose && _direction.magnitude > 2)
         {
             _player.transform.position = new Vector3(               
-               - _direction.x * _speedForce * Time.fixedDeltaTime,
+               - _direction.x * speedForce * Time.fixedDeltaTime,
                 _player.transform.position.y,
-               - _direction.y * _speedForce * Time.fixedDeltaTime);
+               - _direction.y * speedForce * Time.fixedDeltaTime);
             
         }
         ///////////////////Borders//////////////////////////////////
@@ -63,7 +63,7 @@ public class PlayerTouchControl : MonoBehaviour
     }
     private void PlayerFalling()
     {
-        var fall = _player.position.y - _fallForce * Time.fixedDeltaTime;
+        var fall = _player.position.y - fallForce * Time.fixedDeltaTime;
         _player.transform.position = new Vector3(_player.transform.position.x, fall, _player.transform.position.z);
     }
 
@@ -73,7 +73,7 @@ public class PlayerTouchControl : MonoBehaviour
         if(Input.GetMouseButton(0))
         {
             DirectionMouse = Input.mousePosition / Screen.width *50;
-            _player.transform.position = new Vector3(DirectionMouse.x * _speedForce * Time.fixedDeltaTime, _player.transform.position.y, DirectionMouse.y * _speedForce * Time.fixedDeltaTime);
+            _player.transform.position = new Vector3(DirectionMouse.x * speedForce * Time.fixedDeltaTime, _player.transform.position.y, DirectionMouse.y * speedForce * Time.fixedDeltaTime);
             _player.transform.position = new Vector3(
           Mathf.Clamp(_player.transform.position.x, borders.Min_X, borders.Max_X),
           _player.transform.position.y,

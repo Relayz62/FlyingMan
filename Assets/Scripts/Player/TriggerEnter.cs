@@ -10,6 +10,8 @@ public class TriggerEnter : MonoBehaviour
     public delegate void onMoneyPicked<Money>();
     public event onMoneyPicked<Money> moneyPickedEvent;
 
+    public UnityAction OnPickedPower;
+
 
     private void OnTriggerEnter(Collider collider)
     {
@@ -21,6 +23,12 @@ public class TriggerEnter : MonoBehaviour
         {
             Destroy(collider.gameObject, 0.1f);
             moneyPickedEvent?.Invoke();
+        }
+
+        if(collider.CompareTag("PowerPlumage"))
+        {
+            Destroy(collider.gameObject, 0.1f);
+            OnPickedPower?.Invoke();
         }
     }
 }
