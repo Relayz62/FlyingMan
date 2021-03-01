@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb3734ec5346bc4c920c39e6545e244, type: 3}
   m_Name: Hat
   m_EditorClassIdentifier: 
-  Icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  ID: 0
+  Icon: {fileID: 21300000, guid: 6838139227613944692338f39b2fb251, type: 3}
   name: HatOne
   save: 0
-  Model: {fileID: 0}
-  accsesType: 0
+  Model: {fileID: 2402038295163475203, guid: e24bfad7d031cfd408c96ca34cd5084c, type: 3}
+  accsesType: 1

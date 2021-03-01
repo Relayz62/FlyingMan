@@ -14,6 +14,6 @@ public class Money : MonoBehaviour
 
     private void RotateMoney()
     {
-        MoneyObject.transform.Rotate(new Vector3(0, 30, 30) * Time.fixedDeltaTime);
+        MoneyObject.transform.Rotate(new Vector3(20, 30, 30) * Time.fixedDeltaTime);
     }
 }

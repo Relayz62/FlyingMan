@@ -134,6 +134,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotIcon: {fileID: 6238429963169781422}
   _storeEntity: {fileID: 0}
+  slotModel: {fileID: 0}
+  slotID: 0
+  _playerClothes: {fileID: 5515444311691348092, guid: a52502991e77d3e498b8e8fc9b464adf,
+    type: 3}
 --- !u!1 &6360063005162702468
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +173,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: -30}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2466879688042896228
 CanvasRenderer:
@@ -193,8 +197,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0.0552845, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
+  m_RaycastTarget: 0
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

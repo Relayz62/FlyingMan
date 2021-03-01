@@ -5,16 +5,22 @@ using UnityEngine.Events;
 
 public class TriggerEnter : MonoBehaviour
 {
+    [SerializeField] private PlayerDeath _playerDeath;
+
+    public delegate void onMoneyPicked<Money>();
+    public event onMoneyPicked<Money> moneyPickedEvent;
+
 
     private void OnTriggerEnter(Collider collider)
     {
-        if(collider.CompareTag("Obstacle"))
+        if (collider.CompareTag("Obstacle"))
         {
-            Destroy(gameObject);
+            _playerDeath.PlayerDead();
         }
-        if(collider.CompareTag("Coin"))
+        if (collider.CompareTag("Coin"))
         {
-
+            Destroy(collider.gameObject, 0.1f);
+            moneyPickedEvent?.Invoke();
         }
     }
 }

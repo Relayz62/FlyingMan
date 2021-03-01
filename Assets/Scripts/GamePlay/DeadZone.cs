@@ -6,6 +6,6 @@ public class DeadZone : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(other.gameObject);
+        if (!other.CompareTag("MapPoint")) Destroy(other.gameObject);
     }
 }

@@ -14,11 +14,6 @@ public class GameStates : MonoBehaviour
         gameState = GameState.Start;
     }
 
-    private void Update()
-    {
-       
-    }
-
     public void StartGame(bool start)
     {
         if (start)
@@ -30,7 +25,12 @@ public class GameStates : MonoBehaviour
 
     public void EndGame(bool loose)
     {
-        if (loose) gameState = GameState.End;
+        if (loose)
+        {
+            gameState = GameState.End;
+            _playerContrl.enabled = false;
+        }
+
     }
 
 }

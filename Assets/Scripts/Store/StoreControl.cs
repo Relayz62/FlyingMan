@@ -9,6 +9,7 @@ public class StoreControl : MonoBehaviour
     public Canvas StoreCanvas; // магазин
     [SerializeField] private Camera _storeCam; // камера в магазине
     [SerializeField] private GameObject _stand;
+    [SerializeField] private UIController _UICtrl;
     private bool isStoreOpen;
 
 
@@ -28,6 +29,7 @@ public class StoreControl : MonoBehaviour
         TapToStart.SetActive(false);
         isStoreOpen = true;
         StoreCanvas.enabled = true;
+        _UICtrl.OnOffCanvas(0);
     }
 
     public void CloseStore()
@@ -36,5 +38,6 @@ public class StoreControl : MonoBehaviour
         TapToStart.SetActive(true);
         isStoreOpen = false;
         StoreCanvas.enabled = false;
+        _UICtrl.OnOffCanvas(0);
     }
 }

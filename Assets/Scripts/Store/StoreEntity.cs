@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New StoreObject", menuName = "Store/StoreObject")]
 public class StoreEntity : ScriptableObject
 {
+    public int ID;
     public Sprite Icon;
     public new string name;
     public int save = 0;
